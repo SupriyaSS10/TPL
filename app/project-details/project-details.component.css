@@ -1,0 +1,58 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+
+   margin: auto;
+  width: 60%;
+ padding: 10px;
+ position:absolute;
+
+top:150px;
+left: 200px;
+
+height:200px;
+
+width:200px;
+
+  /* The image used */
+  background-image: url("/src/Public/Header-bg.svg");
+ 
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  column-gap: 50px;
+}
+.tl,col,col1,col2,col3{
+
+  border: 2px solid #edeeeb; 
+  border-spacing: 30px;
+  grid-column-gap: 50px;
+  column-gap: 200px;
+  border-radius: 20px;
+  margin: 150px;
+  padding: 20px;
+
+  
+ 
+}
+.col1{
+  border: 10px;
+}
+
+/* .col{
+  column-gap: 80px;
+  grid-column-gap: 50px;
+  border-spacing: 30x;
+}
+.col1,col2,col3{
+  column-gap: 50px;
+  grid-column-gap: 50px;
+  border-spacing: 20x;
+} */

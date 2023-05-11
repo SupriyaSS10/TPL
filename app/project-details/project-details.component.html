@@ -1,0 +1,87 @@
+<!-- <input [(ngModel)] = "name"/>
+
+{{name}} -->
+
+
+<div class="bg">
+    <form class="fg">
+        <table class="tl">
+            <tr class="col">
+                <td colspan="2">
+                    <label for="area"></label>
+                    <textarea id="area" name="area" rows="3" cols="80"
+                        [(ngModel)]="selectedTextArea">Enter the Project Theme</textarea>
+
+                </td>
+                <td>
+                    <button (click)="onSave()">Save Project</button>
+                </td>
+
+            </tr>
+            <tr class="col1">
+                <td>Reason<br>
+                    <select [(ngModel)]="selectedReason" [ngModelOptions]="{standalone: true}">
+                        <option *ngFor="let n of Reason">{{ n }}</option>
+                    </select>
+
+                </td>
+                <td><label>Type<br></label>
+                    <select [(ngModel)]="selectedType" [ngModelOptions]="{standalone: true}">
+                        <option *ngFor="let n of Type">{{ n }}</option>
+                    </select>
+
+                </td>
+                <td><label>Division<br></label>
+                    <select [(ngModel)]="selectedDivision" [ngModelOptions]="{standalone: true}">
+                        <option *ngFor="let n of Division">{{ n }}</option>
+                    </select>
+
+                </td>
+            </tr>
+            <tr class="col2">
+                <td>
+                    <label>Category<br></label>
+                    <select [(ngModel)]="selectedCategory" [ngModelOptions]="{standalone: true}">
+                        <option *ngFor="let n of Category">{{ n }}</option>
+                    </select>
+
+                </td>
+                <td>
+                    <label>Priority<br></label>
+                    <select [(ngModel)]="selectedPriority" [ngModelOptions]="{standalone: true}">
+                        <option *ngFor="let n of Priority">{{ n }}</option>
+                    </select>
+                </td>
+                <td>
+                    <label>Department<br></label>
+                    <select [(ngModel)]="selectedDepartment" [ngModelOptions]="{standalone: true}">
+
+                        <option *ngFor="let n of Department">{{ n }}</option>
+                    </select>
+
+                </td>
+            </tr>
+            <tr class="col3">
+                <td>
+                    <label>Start date as per project plan<br></label>
+                    <input type="date" [(ngModel)]="selectedStartDate" [ngModelOptions]="{standalone: true}"
+                        id="startDate" name="startDate" />
+                </td>
+                <!-- {{ selectedStartDate }} -->
+                <td>
+                    <label>End date as per project plan<br></label>
+                    <input type="date" [(ngModel)]="selectedEndDate" [ngModelOptions]="{standalone: true}" id="EndDate"
+                        name="EndDate" />
+                </td>
+                <!-- {{selectedEndDate | date: 'dd/MM/YYYY' }} -->
+                <td>
+                    <label>Location<br></label>
+                    <select [(ngModel)]="selectedLocation" [ngModelOptions]="{standalone: true}">
+                        <option *ngFor="let n of Location">{{ n }}</option>
+                    </select>
+                </td>
+                <!-- <button (click)="onSave()">Save Project</button> -->
+            </tr>
+        </table>
+    </form>
+</div>

@@ -1,0 +1,25 @@
+<div class="bg-img">
+
+  
+  
+  <form  class="container">
+
+    <div class="logo-img">
+      <img src="/src/assets/images/Logo.svg" alt="">
+      <h6 >login to get started</h6>
+
+    </div>
+    
+    
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" [(ngModel)]="mid" placeholder="Enter Email" name="email" required>
+    
+    <label for="psw"><b>Password</b></label>
+    <input type="password" [(ngModel)]="pass" placeholder="Enter Password" name="psw" required>
+
+
+    <button type="submit"  (click)="submit()"  class="btn">Login</button>
+  </form>
+
+</div>
